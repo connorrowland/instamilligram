@@ -1,0 +1,25 @@
+<div class="post">
+	<%=link_to (image_tag post.image.url(:medium), class:'post-image'), post_path(post) %>
+	<div class="post-text">
+		<div class="post-attributes">
+			<div class="username-caption">
+				<h2><em>by</em> <%= post.user.username %>:</h2>
+				<p class="post-caption thin-weight"><%= post.caption %></p>
+			</div>
+			
+			<% if post.user.id == current_user.id %>
+				<%= link_to 'Edit Post', edit_post_path(post), class:'edit-link' %>
+			<% end %>
+		</div>
+		<div class="twenty-spacer"></div>
+		
+
+		<div id="comments_<%= post.id %>" >
+			<% if post.comments %>
+				<%= render post.comments, post:post %>
+			<% end %>
+		</div>
+
+		<%= render 'shared/comment_form', post:post %>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="regular-form container spaced-and-centered">
+	<div class="color-background light-gray">
+		<div class="vertical-center">
+			<h3>Sign Up</h3>
+		</div>
+	</div>
+	<div class="fifty-spacer"></div>
+	<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+		<%= f.error_notification %>
+		<%= f.input :username, required: true %>
+		<%= f.input :email, required: true, :class => "caption-input" %>
+		<%= f.input :password, required: true, placeholder: "#{@minimum_password_length} characters minimum" if @minimum_password_length %>
+		<%= f.input :password_confirmation, required: true %>
+		<div class="center-container">
+			<%= f.button :submit, "SIGN UP", :class => 'button-lg center' %>
+		</div>
+	<% end %>
+	<div class="fifty-spacer"></div>
+</div>

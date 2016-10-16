@@ -1,0 +1,16 @@
+<div class="regular-form spaced-and-centered">
+	<div class="color-background color-gradient">
+		<div class="vertical-center">
+			<h3 class="white">New Post</h3>
+		</div>
+	</div>
+	<div class="fifty-spacer"></div>
+	<%= simple_form_for @post do |f| %>
+		<%= f.input :image, :class => 'image-input'%>
+		<%= f.input :caption, :class => 'caption-input' %>
+		<div class="center-container">
+			<%= f.button :submit, :class => 'button-lg center'%>
+		</div>
+	<% end %>
+	<div class="fifty-spacer"></div>
+</div>

@@ -1,0 +1,115 @@
+.post{
+    margin-left: auto;
+    margin-right: auto;
+	width: 600px;
+    text-align: right;
+    margin-bottom: 80px;
+}
+.post img{
+    width: 600px;
+    height: auto;
+}
+.edit-post-image{
+    float: left;
+    width: 400px;
+}
+.edit-post-image img{
+    width: 400px;
+}
+.edit-post-actions{
+    width: 400px;
+    float: right;
+    border: 1px solid whitesmoke;
+}
+.edit-post-form{
+    width: 400px;
+    text-align: center;
+}
+.edit-post-form label{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+.post img{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(144, 144, 144);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(144, 144, 144);
+    box-shadow: 0px 0px 5px 0px rgb(144, 144, 144);
+}
+.post-text h2{
+    margin-bottom: 1px;
+    color: #5a5a5a;
+    font-size: 12px;
+}
+.post-attributes{
+    height: 35px;
+    margin-bottom: 15px;
+}
+.username-caption{
+    float: right;
+}
+.post-attributes a{
+    float: left;
+}
+.post-caption{
+    width: 100%;
+    margin-top: 15px;
+}
+.post-text p{
+    color: black;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+.posts-container{
+    padding-top: 50px;
+}
+#post_caption{
+    width: 227px;
+	outline: none;
+	border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px solid rgb(181, 181, 181);
+}
+#post_caption:focus{
+    border-bottom: 1.5px solid rgb(0, 186, 157);
+}
+@media (max-width: 1100px){
+    .posts-container{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .post, .post img{
+        width: 100%;
+    }
+}
+@media (max-width: 750px){
+    .posts-container{
+        width: 525px;
+    }
+}
+@media (max-width: 550px){
+    .posts-container{
+        width: 340px;
+    }
+    .edit-post-image img {
+        width: 100%;
+    }
+    .edit-post-image {
+        float: none;
+        width: inherit;
+    }
+    .edit-post-actions,.edit-post-form{
+        width: 100%;
+    }
+}
+@media (max-width: 350px){
+    .posts-container{
+        width: 300px;
+    }
+}
+
+

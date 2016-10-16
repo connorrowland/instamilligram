@@ -1,0 +1,4 @@
+<%= form_for([post, post.comments.build], remote:true) do |f| %>
+	<%= f.text_field :content, :class => 'caption-input comment-content', id: "comment_content_#{post.id}" %>
+	<%= f.button :submit, :class => 'button-sm' %>
+<% end %>

@@ -1,0 +1,28 @@
+<div class="posts-container">
+	<div class="left">
+		<div class="edit-post-image">
+			<%=image_tag @post.image.url(:medium) %>
+			<div class="post-text">
+				<h2><em>BY</em> <%= @author.username %></h2>
+				<p class="post-caption thin-weight"><%= @post.caption %></p>
+			</div>
+		</div>
+	</div>
+	<div class="edit-post-actions">
+		<div class="color-background color-gradient">
+			<div class="vertical-center">
+				<h3 class="white">Edit Post</h3>
+			</div>
+		</div>
+		<div class="fifty-spacer"></div>
+		<div class="edit-post-form">
+			<%= render :partial => "shared/form" %>
+		</div>
+		<div class="fifty-spacer"></div>
+		<div class="center-container">
+			<%= link_to 'Delete Post', post_path(@post), method: :delete, :class => 'link center' %>
+			<%= link_to 'Cancel', root_path, :class => 'link center' %>
+		</div>
+		<div class="fifty-spacer"></div>
+	</div>
+</div>

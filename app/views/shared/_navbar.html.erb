@@ -1,0 +1,18 @@
+<div class="nav-items-container">
+  <div class="nav-inner center">
+    <div class="nav-logo-container">
+      <%= link_to root_path do%>
+        <h1 class="nav-logo">Insta<br>Milligram</h1>
+      <% end %>
+    </div>
+    <div class="nav-links-container">
+      <% if user_signed_in? %>
+        <%= link_to 'New Post',new_post_path, :class => 'link' %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, :class => 'link' %>
+      <% else %>
+        <%= link_to 'Login', new_user_session_path, :class => 'link' %>
+        <%= link_to 'Register', new_user_registration_path, :class => 'link' %>
+      <% end %>
+    </div>
+  </div>
+</div>
