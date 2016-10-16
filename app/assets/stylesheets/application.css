@@ -1,5 +1,5 @@
 @import 'posts.css';
-@import 'comments.scss';
+@import 'comments.css';
 html{
 	margin: 0;
 	padding: 0;
