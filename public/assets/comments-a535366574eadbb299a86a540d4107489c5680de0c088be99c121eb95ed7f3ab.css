@@ -1,0 +1,30 @@
+.new_comment{
+	margin-top: 30px;
+    border: 1px solid #c3c3c3;
+    padding: 10px;
+
+}
+.new_comment > .caption-input{
+	width: 100%;
+	border-bottom: 1px solid #c3c3c3;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	height: 25px;
+}
+.new_comment > .caption-input:focus{
+	outline: none;
+	border-bottom: 1px solid rgb(1, 134, 113);
+}
+.delete-comment{
+	color: rgb(0, 186, 157);
+	text-transform: lowercase !important;
+}
+.post-comments{
+	color: black;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-left: auto;
+    text-transform: inherit !important;
+}
