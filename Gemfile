@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #Amazon Ruby SDK for interacting with S3
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '< 2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use PostgreSQL as the database - why? Because I want to deploy with heroku
