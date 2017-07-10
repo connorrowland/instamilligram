@@ -1,9 +1,13 @@
 .post{
     margin-left: auto;
     margin-right: auto;
-	width: 600px;
+    width: 600px;
     text-align: right;
     margin-bottom: 80px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(183, 183, 183);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(183, 183, 183);
+    box-shadow: 0px 0px 50px 0px rgb(183, 183, 183);
 }
 .post img{
     width: 600px;
@@ -30,51 +34,42 @@
     letter-spacing: 1px;
     margin-right: 10px;
 }
-.post img{
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(144, 144, 144);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(144, 144, 144);
-    box-shadow: 0px 0px 5px 0px rgb(144, 144, 144);
+.post-text{
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.post-text h2{
-    margin-bottom: 1px;
-    color: #5a5a5a;
+.post-text h4{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #4A4A4A;
     font-size: 12px;
+    letter-spacing: 0;
+    font-weight: bold;
+    margin-right: 10px;
 }
 .post-attributes{
-    height: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .username-caption{
-    float: right;
-}
-.post-attributes a{
-    float: left;
-}
-.post-caption{
-    width: 100%;
-    margin-top: 15px;
-}
-.post-text p{
-    color: black;
-    font-weight: 300;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-left: auto;
+    text-align: left;
+    display: flex;
+    align-items: baseline;
 }
 .posts-container{
     padding-top: 50px;
 }
-#post_caption{
-    width: 227px;
-	outline: none;
-	border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1.5px solid rgb(181, 181, 181);
+.post-caption{
+    text-transform: capitalize;
+    margin: 0;
 }
-#post_caption:focus{
-    border-bottom: 1.5px solid rgb(0, 186, 157);
+.post-caption p{
+    margin: 0;
 }
 @media (max-width: 1100px){
     .posts-container{

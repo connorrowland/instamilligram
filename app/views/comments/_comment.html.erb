@@ -1,8 +1,8 @@
-<p class="post-comments">
-	<strong><%= comment.user.username %>:</strong>
-	<%= comment.content %>
-	<br>
+<div class="post-comments">
+	<h4><%= comment.user.username %></h4>
+
+	<p><%= comment.content %></p>
 	<% if comment.user == current_user %>
 	<%= link_to 'Delete', post_comment_path(post, comment), method: :delete, remote: true, class:'thin-weight delete-comment' %>
 	<% end %>
-</p>
+</div>

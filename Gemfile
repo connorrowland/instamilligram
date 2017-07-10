@@ -5,7 +5,7 @@ gem 'aws-sdk-v1'
 gem 'aws-sdk', '~> 2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-# Use PostgreSQL as the database - why? Because I want to deploy with heroku
+# Use PostgreSQL as the database to deploy with heroku
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
