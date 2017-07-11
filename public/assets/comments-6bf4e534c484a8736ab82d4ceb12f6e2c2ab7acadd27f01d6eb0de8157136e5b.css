@@ -1,0 +1,37 @@
+.new_comment{
+  margin-top: 25px;
+  width: 100%;
+}
+.comment-form-container > .caption-input{
+  width: 100%;
+  border: none;
+  height: 25px;
+  outline:none;
+}
+.comment-form-container > .button-sm{
+  margin-top:0;
+  margin-bottom:0;
+  margin-left: 30px;
+}
+.new_comment > .caption-input:focus{
+	outline: none;
+	border-bottom: 1px solid rgb(1, 134, 113);
+}
+.delete-comment{
+	color: rgb(0, 186, 157);
+	text-transform: lowercase;
+  margin-left: 10px;
+}
+.post-comments{
+  text-align: left;
+  display: flex;
+  margin-top: 5px;
+}
+.post-comments p{
+  margin: 0;
+  text-transform: capitalize;
+}
+.comment-form-container{
+  display: flex;
+  justify-content: space-between;
+}

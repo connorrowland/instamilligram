@@ -1,0 +1,110 @@
+.post{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: right;
+    margin-bottom: 80px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(183, 183, 183);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(183, 183, 183);
+    box-shadow: 0px 0px 50px 0px rgb(183, 183, 183);
+}
+.post img{
+    width: 600px;
+    height: auto;
+}
+.edit-post-image{
+    float: left;
+    width: 400px;
+}
+.edit-post-image img{
+    width: 400px;
+}
+.edit-post-actions{
+    width: 400px;
+    float: right;
+    border: 1px solid whitesmoke;
+}
+.edit-post-form{
+    width: 400px;
+    text-align: center;
+}
+.edit-post-form label{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+.post-text{
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.post-text h4{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #4A4A4A;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.post-attributes{
+    margin-bottom: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.username-caption{
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+}
+.posts-container{
+    padding-top: 50px;
+}
+.post-caption{
+    text-transform: capitalize;
+    margin: 0;
+}
+.post-caption p{
+    margin: 0;
+}
+@media (max-width: 1100px){
+    .posts-container{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .post, .post img{
+        width: 100%;
+    }
+}
+@media (max-width: 750px){
+    .posts-container{
+        width: 525px;
+    }
+}
+@media (max-width: 550px){
+    .posts-container{
+        width: 340px;
+    }
+    .edit-post-image img {
+        width: 100%;
+    }
+    .edit-post-image {
+        float: none;
+        width: inherit;
+    }
+    .edit-post-actions,.edit-post-form{
+        width: 100%;
+    }
+}
+@media (max-width: 350px){
+    .posts-container{
+        width: 300px;
+    }
+}
+
+
